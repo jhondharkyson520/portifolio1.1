@@ -81,7 +81,7 @@ export function Header() {
                             </Link>
 
                             <Link to='/services'>
-                                <a className="text-slate-800 hover:text-amber-400 hover:underline" onClick={closeMenu}>Services</a>
+                                <a className="text-slate-800 hover:text-amber-400 hover:underline" onClick={closeMenu}>Skills</a>
                             </Link>
 
                             <Link to='/projects'>
@@ -106,7 +106,7 @@ export function Header() {
                     </Link>
 
                     <Link to='/sobre'>
-                        <a className="text-black hover:text-amber-400">Services</a>
+                        <a className="text-black hover:text-amber-400">Skills</a>
                     </Link>
 
                     <Link to='/sobre'>

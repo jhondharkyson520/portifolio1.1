@@ -1,0 +1,10 @@
+.icon-gallery-item {
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+    width: 100px; 
+    height: 100px;
+  }
+  
+  .icon-gallery-item:hover {
+    transform: scale(1.1); 
+  }
