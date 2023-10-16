@@ -12,15 +12,7 @@ export function Footer(){
                     target='_blank'
                     >
                         <FaWhatsapp class='FaWhatsapp' size={35} style={{color: '#25d366'}}/>
-                </a>
-
-                <a 
-                    className='hover:scale-125 hover:transition-all' 
-                    href="https://https://www.instagram.com/"
-                    target='_blank'
-                    >
-                        <FaInstagram class='FaWhatsapp' size={35} style={{color: '#BE2E85'}}/>
-                </a>
+                </a>                
 
                 <a 
                     className='hover:scale-125 hover:transition-all' 

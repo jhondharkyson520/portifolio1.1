@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import logoS from '../../assets/logoheader.png'
 import { useState } from 'react'
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 
 export function Header() {
@@ -96,6 +97,32 @@ export function Header() {
                                     Fale Comigo!
                                 </button>
                             </Link>
+
+                            <div className='flex items-center justify-center gap-4'>
+                                <a 
+                                    className='hover:scale-125 hover:transition-all' 
+                                    href="https://api.whatsapp.com/send?phone=5517988334070&text=Olá, Kelvin gostaria de "
+                                    target='_blank'
+                                    >
+                                        <FaWhatsapp class='FaWhatsapp' size={35} style={{color: '#25d366'}}/>
+                                </a>                
+
+                                <a 
+                                    className='hover:scale-125 hover:transition-all' 
+                                    href="https://https://www.instagram.com/"
+                                    target='_blank'
+                                    >
+                                        <FaLinkedinIn class='FaWhatsapp' size={35} style={{color: '#087BB9'}}/>
+                                </a>
+
+                                <a 
+                                    className='hover:scale-125 hover:transition-all' 
+                                    href="https://https://www.instagram.com/"
+                                    target='_blank'
+                                    >
+                                        <FaGithub class='FaWhatsapp' size={35} style={{color: '#080808'}}/>
+                                </a>
+                            </div>
                         </nav>
                     </div>
                 )}
@@ -117,7 +144,32 @@ export function Header() {
                         <button className="text-black bg-amber-400 rounded-3xl px-5 py-2 items-center justify-center hover:bg-amber-500">
                             Fale Comigo!
                         </button>
-                    </Link>                    
+                    </Link>
+                    <div className='flex items-center justify-center gap-4'>
+                                <a 
+                                    className='hover:scale-125 hover:transition-all' 
+                                    href="https://api.whatsapp.com/send?phone=5517988334070&text=Olá, Kelvin gostaria de "
+                                    target='_blank'
+                                    >
+                                        <FaWhatsapp class='FaWhatsapp' size={35} style={{color: '#25d366'}}/>
+                                </a>                
+
+                                <a 
+                                    className='hover:scale-125 hover:transition-all' 
+                                    href="https://https://www.instagram.com/"
+                                    target='_blank'
+                                    >
+                                        <FaLinkedinIn class='FaWhatsapp' size={35} style={{color: '#087BB9'}}/>
+                                </a>
+
+                                <a 
+                                    className='hover:scale-125 hover:transition-all' 
+                                    href="https://https://www.instagram.com/"
+                                    target='_blank'
+                                    >
+                                        <FaGithub class='FaWhatsapp' size={35} style={{color: '#080808'}}/>
+                                </a>
+                            </div>                    
                 </nav>
             </div>
 
