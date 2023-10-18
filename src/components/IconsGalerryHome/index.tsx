@@ -4,9 +4,10 @@ import {
   BiLogoCss3,
   BiLogoTypescript,
   BiLogoReact,
-  BiLogoTailwindCss, 
+  BiLogoTailwindCss,
   BiLogoGit,
   BiLogoNodejs,
+  BiLogoJavascript, // Importe o ícone do JavaScript
 } from 'react-icons/bi';
 import './index.css';
 
@@ -46,6 +47,12 @@ const iconsData = [
     icon: <BiLogoGit size={90} color='#F05639' />,
     url: 'https://git-scm.com/doc',
     info: 'Git é um sistema de controle de versão distribuído usado para rastrear alterações no código-fonte durante o desenvolvimento de software.',
+  },
+  {
+    name: 'JavaScript', // Novo objeto para o JavaScript
+    icon: <BiLogoJavascript size={90} color='#F0DB4F' />, // Ícone do JavaScript
+    url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript',
+    info: 'JavaScript é uma linguagem de programação usada para adicionar interatividade a páginas da web.',
   },
   {
     name: 'Node.js',

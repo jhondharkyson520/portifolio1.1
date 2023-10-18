@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logoheader.png';
-import barber from '../../assets/projects/barber.png';
 import WhatsAppButton from '../../components/ButtonWhatsApp';
 import IconGallery from '../../components/IconsGalerryHome';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-import { useEffect, useState } from 'react';
+import ScrollToTopButton from '../../components/ButtonScrollToTop';
 
 export function Home() {
   const iframeStyle = {
@@ -15,7 +14,7 @@ export function Home() {
   };
 
   return (
-    <div className='w-full flex-col mx-auto px-4 mt-10 mb-10 sm:mt-20'>
+    <div className='w-full flex-col mx-auto px-4 mt-10 mb-10 sm:mt-20' style={{scrollBehavior: 'smooth'}}>
       <div className='sm:flex sm:mt-0 max-w-7xl  mt-10 items-center justify-center px-12'>
         <p className='px-12 text-xl'>
           Olá, meu nome é Jhon Dharkyson! 👋
@@ -33,7 +32,7 @@ export function Home() {
         />
       </div>
 
-      <div className='flex-col sm:mt-10 w-full mt-10 items-center text-center justify-center'>
+      <div className='flex-col sm:mt-10 w-full mt-10 items-center text-center justify-center' id='skills'>
         <p className='text-xl'>
           🚀 Minhas principais habilidades são:
         </p>
@@ -42,6 +41,7 @@ export function Home() {
 
       <div 
         className='flex-col sm:mt-10 w-full mt-10 items-center text-center justify-center'
+        id='projects'        
       >
         <p 
           className='text-xl'
@@ -306,7 +306,8 @@ export function Home() {
               </div>
             </div>
             </div>
-            </div> 
+            </div>
+          <ScrollToTopButton/> 
           <WhatsAppButton />
         </div>
       </div>

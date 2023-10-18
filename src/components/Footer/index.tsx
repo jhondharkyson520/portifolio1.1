@@ -1,5 +1,5 @@
 import logoS from '../../assets/logoheader.png'
-import { FaInstagram, FaWhatsapp, FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { FaWhatsapp, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 export function Footer(){
     return(
