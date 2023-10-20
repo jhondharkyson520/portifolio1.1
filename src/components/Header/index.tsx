@@ -90,17 +90,17 @@ export function Header() {
                         </button>
                         <nav className="flex flex-col items-center justify-center h-full text-2xl gap-4  bg-slate-100">
                         
-                            <Link to="/" className="text-black hover:text-custom-blue-hover-text">Home</Link>
+                            <a onClick={closeMenu} href='/' className="text-black hover:text-custom-blue-hover-text">Home</a>
 
-                            <Link to="/sobre" className="text-black hover:text-custom-blue-hover-text">Skills</Link>
+                            <a onClick={closeMenu} href='#skills' className="text-black hover:text-custom-blue-hover-text">Skills</a>
 
-                            <Link to="/projects" className="text-black hover:text-custom-blue-hover-text">Projects</Link>
+                            <a onClick={closeMenu} href='#projects' className="text-black hover:text-custom-blue-hover-text">Projects</a>
 
-                            <a href="https://www.instagram.com/" target="_blank" className="hover:scale-125 hover:transition-all">
+                            <a href="https://www.linkedin.com/in/jhon-mendon%C3%A7a-203925163/" target="_blank" className="hover:scale-125 hover:transition-all">
                                 <FaLinkedinIn className="FaLinkedinIn" size={35} style={{ color: '#087BB9' }} />
                             </a>
 
-                            <a href="https://www.instagram.com/" target="_blank" className="hover:scale-125 hover:transition-all">
+                            <a href="https://github.com/jhondharkyson520" target="_blank" className="hover:scale-125 hover:transition-all">
                                 <FaGithub className="FaWhatsapp" size={35} style={{ color: '#080808' }} />
                             </a>
 
@@ -122,11 +122,11 @@ export function Header() {
 
                     <a href="#projects" className="text-black hover:text-custom-blue-hover-text">Projects</a>
 
-                    <a href="https://www.instagram.com/" target="_blank" className="hover:scale-125 hover:transition-all">
+                    <a href="https://www.linkedin.com/in/jhon-mendon%C3%A7a-203925163/" target="_blank" className="hover:scale-125 hover:transition-all">
                         <FaLinkedinIn className="FaLinkedinIn" size={35} style={{ color: '#087BB9' }} />
                     </a>
 
-                    <a href="https://www.instagram.com/" target="_blank" className="hover:scale-125 hover:transition-all">
+                    <a href="https://github.com/jhondharkyson520" target="_blank" className="hover:scale-125 hover:transition-all">
                         <FaGithub className="FaWhatsapp" size={35} style={{ color: '#080808' }} />
                     </a>
 

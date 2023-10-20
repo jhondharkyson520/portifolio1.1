@@ -34,7 +34,7 @@ const ScrollToTopButton = () => {
       } transition-opacity duration-300 ease-in-out`}
     >
       <button
-        className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hover:scale-110 hover:transition-all"
+        className=" text-custom-blue-hover px-4 py-2  hover:scale-110 hover:transition-all"
         onClick={scrollToTop}
       >
         <FaArrowUp size={30} />

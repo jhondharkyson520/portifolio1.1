@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
-const WhatsAppButton = () => {
-  const [isVisible, setIsVisible] = useState(false);
+const WhatsAppButton: React.FC = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +21,7 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleClick = () => {
-    window.location.href = 'https://api.whatsapp.com/send?phone=5517988334070&text=Olá, Kelvin gostaria de';
+    window.open('https://api.whatsapp.com/send?phone=5534998277081&text=Olá, Jhon', '_blank');
   };
 
   return (
@@ -32,12 +32,10 @@ const WhatsAppButton = () => {
     >
       <button
         className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg hover:scale-110 hover:transition-all"
-        onClick={handleClick}        
+        onClick={handleClick}
       >
-        <FaWhatsapp size={30}/>
-        
-      </button>      
-      
+        <FaWhatsapp size={30} />
+      </button>
     </div>
   );
 };

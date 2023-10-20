@@ -8,7 +8,7 @@ export function Footer(){
             <div className='flex items-center justify-center gap-4'>
                 <a 
                     className='hover:scale-125 hover:transition-all' 
-                    href="https://api.whatsapp.com/send?phone=5517988334070&text=Olá, Kelvin gostaria de "
+                    href="https://api.whatsapp.com/send?phone=5534998277081&text=Olá, Jhon "
                     target='_blank'
                     >
                         <FaWhatsapp class='FaWhatsapp' size={35} style={{color: '#25d366'}}/>
@@ -16,18 +16,18 @@ export function Footer(){
 
                 <a 
                     className='hover:scale-125 hover:transition-all' 
-                    href="https://https://www.instagram.com/"
+                    href="https://www.linkedin.com/in/jhon-mendon%C3%A7a-203925163/"
                     target='_blank'
                     >
-                        <FaLinkedinIn class='FaWhatsapp' size={35} style={{color: '#087BB9'}}/>
+                        <FaLinkedinIn class='FaLinkedinIn' size={35} style={{color: '#087BB9'}}/>
                 </a>
 
                 <a 
                     className='hover:scale-125 hover:transition-all' 
-                    href="https://https://www.instagram.com/"
+                    href="https://github.com/jhondharkyson520"
                     target='_blank'
                     >
-                        <FaGithub class='FaWhatsapp' size={35} style={{color: '#080808'}}/>
+                        <FaGithub class='FaGitHub' size={35} style={{color: '#080808'}}/>
                 </a>
             </div>
             <img
