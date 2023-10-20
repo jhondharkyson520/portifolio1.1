@@ -90,11 +90,11 @@ export function Header() {
                         </button>
                         <nav className="flex flex-col items-center justify-center h-full text-2xl gap-4  bg-slate-100">
                         
-                            <a onClick={closeMenu} href='/' className="text-black hover:text-custom-blue-hover-text">Home</a>
+                            <a onClick={closeMenu} href='/' className="text-black hover:text-custom-blue-hover-text">Página Inicial</a>
 
-                            <a onClick={closeMenu} href='#skills' className="text-black hover:text-custom-blue-hover-text">Skills</a>
+                            <a onClick={closeMenu} href='#skills' className="text-black hover:text-custom-blue-hover-text">Habilidades</a>
 
-                            <a onClick={closeMenu} href='#projects' className="text-black hover:text-custom-blue-hover-text">Projects</a>
+                            <a onClick={closeMenu} href='#projects' className="text-black hover:text-custom-blue-hover-text">Projetos</a>
 
                             <a href="https://www.linkedin.com/in/jhon-mendon%C3%A7a-203925163/" target="_blank" className="hover:scale-125 hover:transition-all">
                                 <FaLinkedinIn className="FaLinkedinIn" size={35} style={{ color: '#087BB9' }} />
@@ -116,11 +116,11 @@ export function Header() {
                 )}
 
                 <nav className="items-center justify-center h-full space-x-10 hidden md:flex sm:mt-16 text-2xl mt-6">
-                    <Link to="/" className="text-black hover:text-custom-blue-hover-text">Home</Link>
+                    <Link to="/" className="text-black hover:text-custom-blue-hover-text">Página Inicial</Link>
 
-                    <a href="#skills" className="text-black hover:text-custom-blue-hover-text">Skills</a>
+                    <a href="#skills" className="text-black hover:text-custom-blue-hover-text">Habilidades</a>
 
-                    <a href="#projects" className="text-black hover:text-custom-blue-hover-text">Projects</a>
+                    <a href="#projects" className="text-black hover:text-custom-blue-hover-text">Projetos</a>
 
                     <a href="https://www.linkedin.com/in/jhon-mendon%C3%A7a-203925163/" target="_blank" className="hover:scale-125 hover:transition-all">
                         <FaLinkedinIn className="FaLinkedinIn" size={35} style={{ color: '#087BB9' }} />

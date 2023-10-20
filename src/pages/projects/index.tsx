@@ -5,29 +5,29 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 const projects = [
   {
+    title: "Landing Page de Borracharia",
+    description: "Desenvolvi uma plataforma online para minha borracharia, usando ReactJS, TypeScript e aplicando o estilo com Tailwind CSS. Criei uma interface moderna, responsiva e intuitiva que oferece aos visitantes uma experiência envolvente. Além disso, integrei uma API externa para otimizar a comunicação com fornecedores de pneus e peças automotivas, garantindo que o estoque da borracharia esteja sempre atualizado. Este projeto representa uma combinação equilibrada de design e desenvolvimento web e é um destaque no meu portfólio.",
+    previewLink: "https://kppneus.vercel.app/",
+    githubLink: "https://github.com/jhondharkyson520/kppneus",
+  },
+  {
     title: "Landing Page de Barbearia",
     description: "Esta landing page foi desenvolvida para uma barbearia moderna, usando HTML, CSS3 e SASS. Apresentando um design elegante e responsivo, a página é repleta de efeitos de animações que criam uma experiência envolvente para os visitantes. Ela fornece informações cruciais, como serviços oferecidos, contato e localização da barbearia. Este projeto demonstra uma combinação equilibrada de design e desenvolvimento web, tornando-o um destaque em meu portfólio.",
     previewLink: "https://projeto-barberdev-glij.vercel.app/",
     githubLink: "https://github.com/jhondharkyson520/projeto-barberdev",
   },
   {
-    title: "Landing Page de Borracharia",
-    description: "Esta landing page foi desenvolvida para uma barbearia moderna, usando HTML, CSS3 e SASS. Apresentando um design elegante e responsivo, a página é repleta de efeitos de animações que criam uma experiência envolvente para os visitantes. Ela fornece informações cruciais, como serviços oferecidos, contato e localização da barbearia. Este projeto demonstra uma combinação equilibrada de design e desenvolvimento web, tornando-o um destaque em meu portfólio.",
-    previewLink: "https://kppneus.vercel.app/",
-    githubLink: "https://github.com/jhondharkyson520/kppneus",
-  },
-  {
-    title: "Landing Page de Sorveteria",
-    description: "Esta landing page foi desenvolvida para uma barbearia moderna, usando HTML, CSS3 e SASS. Apresentando um design elegante e responsivo, a página é repleta de efeitos de animações que criam uma experiência envolvente para os visitantes. Ela fornece informações cruciais, como serviços oferecidos, contato e localização da barbearia. Este projeto demonstra uma combinação equilibrada de design e desenvolvimento web, tornando-o um destaque em meu portfólio.",
-    previewLink: "https://sorveteria-three.vercel.app/",
-    githubLink: "https://github.com/jhondharkyson520/sorveteria",
-  },
-  {
     title: "Criptomoedas",
-    description: "Esta landing page foi desenvolvida para uma barbearia moderna, usando HTML, CSS3 e SASS. Apresentando um design elegante e responsivo, a página é repleta de efeitos de animações que criam uma experiência envolvente para os visitantes. Ela fornece informações cruciais, como serviços oferecidos, contato e localização da barbearia. Este projeto demonstra uma combinação equilibrada de design e desenvolvimento web, tornando-o um destaque em meu portfólio.",
+    description: "Desenvolvi uma página de lista de criptomoedas impressionante usando ReactJS e consumindo uma API externa de criptomoedas. Essa aplicação oferece uma experiência informativa e envolvente para os investidores de criptomoedas. Os preços e dados em tempo real de várias criptomoedas são apresentados de forma clara e acessível. Além disso, a aplicação permite a personalização da lista para acompanhar as criptomoedas de maior interesse. Este projeto demonstra meu compromisso com o design atraente e a entrega de informações valiosas aos investidores de criptomoedas, sendo um destaque no meu portfólio.",
     previewLink: "https://cripto-umber.vercel.app/",
     githubLink: "https://github.com/jhondharkyson520/cripto",
-  },
+  },  
+  {
+    title: "Landing Page de Sorveteria",
+    description: "Para minha sorveteria, desenvolvi uma aplicação web usando ReactJS e TypeScript, aplicando estilos personalizados com CSS3 para criar uma experiência visualmente atraente. A página é responsiva, proporcionando uma experiência agradável em qualquer dispositivo. Além disso, consumi a mesma API externa usada na borracharia para manter o estoque de sabores de sorvete sempre atualizado e oferecer informações sobre promoções exclusivas. Este projeto é um exemplo de como a tecnologia moderna pode melhorar a interação do cliente e a eficiência operacional, e é um destaque no meu portfólio.",
+    previewLink: "https://sorveteria-three.vercel.app/",
+    githubLink: "https://github.com/jhondharkyson520/sorveteria",
+  },  
 ];
 
 const iframeStyle = {

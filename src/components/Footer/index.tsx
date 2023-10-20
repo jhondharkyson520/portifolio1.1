@@ -1,5 +1,7 @@
+import { BiLogoGmail } from 'react-icons/bi'
 import logoS from '../../assets/logoheader.png'
 import { FaWhatsapp, FaLinkedinIn, FaGithub } from 'react-icons/fa'
+
 
 export function Footer(){
     return(
@@ -28,6 +30,14 @@ export function Footer(){
                     target='_blank'
                     >
                         <FaGithub class='FaGitHub' size={35} style={{color: '#080808'}}/>
+                </a>
+
+                <a 
+                    className='hover:scale-125 hover:transition-all' 
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=jhondharkyson@gmail.com"
+                    target='_blank'
+                    >
+                        <BiLogoGmail class='FaGitHub' size={35} style={{color: '#EA4335'}}/>
                 </a>
             </div>
             <img
