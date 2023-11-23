@@ -3,7 +3,7 @@ import logo from '../../assets/logoheader.png'
 export function Description(){
     return(
         <div className='sm:flex sm:mt-0 max-w-7xl  mt-10 items-center justify-center px-12'>
-        <p className='px-12 text-xl text-center'>
+        <p className='px-12 text-xl sm:text-center text-left'>
           Olá, meu nome é Jhon Dharkyson! 👋
           <br />
           <br />

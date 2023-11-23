@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ScrollToTopButton from "../../components/ButtonScrollToTop";
 import WhatsAppButton from "../../components/ButtonWhatsApp";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import SCGPimg from '../../assets/projectsConstruct/SGCPmd.png'
 
 const projects = [
   {
@@ -28,6 +29,14 @@ const projects = [
     previewLink: "https://sorveteria-three.vercel.app/",
     githubLink: "https://github.com/jhondharkyson520/sorveteria",
   },  
+];
+
+const projectsConstruct = [
+  {
+    title: "Em desenvolvimento: Sistema de Gerenciamento de Clínicas de Psicólogos",
+    description: "Utilizando ReactJS, Next, CSS3, Node.js e TypeScript, estou criando uma plataforma intuitiva e responsiva. Semelhante à minha aplicação para a borracharia, priorizo o equilíbrio entre design moderno e eficiência no desenvolvimento web. A proposta inclui integração de API externa para aprimorar a comunicação e funcionalidades avançadas. Este projeto destaca-se pela combinação estratégica de tecnologias e design, consolidando-se como mais um diferencial no meu portfólio.",
+    previewLink: "https://www.figma.com/file/1gMKTDd2qgzte1SN8sCudK/Sistema-de-Gest%C3%A3o-de-Cl%C3%ADnica-de-Psic%C3%B3logos?type=design&node-id=0-1&mode=design&t=RXrt8aBTVODIisiK-0",
+  }
 ];
 
 const iframeStyle = {
@@ -67,6 +76,34 @@ export function Projects() {
                       <AiFillGithub size={25} color="#000" />
                       <p className="ml-2 text-center font-medium text-lg cursor-pointer">GitHub</p>
                     </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+
+      {projectsConstruct.map((project, index) => (
+          <div key={index} className="w-full p-8">
+            <div className="sm:flex grid grid-cols-1 gap-8">
+             <img 
+                  src={SCGPimg} 
+                  title="Pré-visualização do site" 
+                  className="rounded-2xl sm:max-w-xl w-full h-96" 
+                />
+             
+              <div className="flex flex-col  bg-white items-center justify-center p-5 rounded-2xl mt-4 sm:w-3/4 w-full">
+                <span>
+                  <p className="font-bold">{project.title}</p>
+                  <p className="font-medium">Descrição:</p>
+                  <p>{project.description}</p>
+                </span>
+                <div className="relative flex flex-col justify-center bg-white h-auto mt-4 mb-6">
+                  <div className="flex items-center justify-center">
+                    <Link to={project.previewLink} target="_blank" className="hover:transition-all hover:scale-110 flex items-center px-5">
+                      <AiFillEye size={25} color="#000" />
+                      <p className="ml-2 text-center font-medium text-lg cursor-pointer">Visualizar Figma do Projeto</p>
+                    </Link>                    
                   </div>
                 </div>
               </div>
