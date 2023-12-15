@@ -7,7 +7,7 @@ export function Description(){
           Olá, meu nome é Jhon Dharkyson! 👋
           <br />
           <br />
-          Sou um <strong>desenvolvedor Front-End</strong> apaixonado,
+          Sou um <strong>desenvolvedor Full-Stack</strong> apaixonado,
           formado em Sistemas de Informação pela UEMG - Universidade do Estado de Minas Gerais.
           Além disso, tenho uma Pós-Graduação em Projetos de Cloud Computing e Projetos de Aplicativos Móveis
           Multiplataforma pela UNIAMERICA.
