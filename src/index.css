@@ -4,9 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.light-mode {
+  background-color: #F1F1F1; 
+  color: #000000; 
+}
+
+
+.dark-mode {
+  background-color: #2E2A44; 
+  color: #ffffff; 
+}
+
 body {
+  background-color: #F1F1F1; 
   min-height: 100vh;
-  background: #F1F1F1;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -21,17 +33,16 @@ body {
 
 main {
   flex: 1;
-  
 }
 
-header {  
+header {
   padding: 1rem;
   position: relative;
   top: 0;
   z-index: 10;
 }
 
-footer {  
+footer {
   padding: 1rem;
   position: relative;
   bottom: 0;

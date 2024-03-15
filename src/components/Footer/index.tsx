@@ -1,12 +1,18 @@
 import { BiLogoGmail } from 'react-icons/bi'
-import logoS from '../../assets/logoheader.png'
+import logoS from '../../assets/imgDescriptionLight.png'
 import { FaWhatsapp, FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { useTheme } from '../../provider/ThemeProvider';
+import { useLanguage } from '../../provider/LanguageProvider';
 
 
 export function Footer(){
+    
+    const { themeMode } = useTheme();
+    const { languageMode } = useLanguage();
+    
     return(
-        <footer className="flex flex-col items-center justify-center mt-10 text-white h-72" style={{backgroundColor: '#252525'}}>
-            <h1 className='text-center text-xl mb-4 mt-4'>Fale conosco em nossas redes sociais!</h1>
+        <footer className={`${themeMode ? 'bg-theme-dark-footer' : 'bg-theme-light-footer' } flex flex-col items-center justify-center mt-10 text-white h-72`}>
+            <h1 className='text-center text-xl mb-4 mt-4'>{languageMode ? <>Talk to me on my social media!</> : <>Fale comigo em minhas redes sociais!</>}</h1>
             <div className='flex items-center justify-center gap-4'>
                 <a 
                     className='hover:scale-125 hover:transition-all' 
@@ -47,7 +53,8 @@ export function Footer(){
 
                         
             />
-            <h1 className='sm:text-lg text-sm mb-5'>Copyright | Jhon Dharkyson - Todos os direitos reservados</h1>
+            <h1 className='sm:text-lg text-sm mb-5'>Copyright | Jhon Dharkyson - 
+            {languageMode ? <> All rights reserved</> : <> Todos os direitos reservados</>}</h1>
         </footer>
     )
 }
