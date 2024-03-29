@@ -61,7 +61,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
   
   const projectsConstruct = [
     {
-      title: languageMode ? "In Development: Psychologist Clinics Management System" : "Em desenvolvimento: Sistema de Gerenciamento de Clínicas de Psicólogos",
+      title: languageMode ? "In Development: ConsultEasy" : "Em desenvolvimento: ConsultEasy",
       description: languageMode ? "Using ReactJS, Next, CSS3, Node.js, and TypeScript, I'm creating an intuitive and responsive platform. Similar to my tire repair shop application, I prioritize the balance between modern design and efficiency in web development. The proposal includes integrating an external API to enhance communication and advanced functionalities. This project stands out for its strategic combination of technologies and design, consolidating itself as another differential in my portfolio." : "Utilizando ReactJS, Next, CSS3, Node.js e TypeScript, estou criando uma plataforma intuitiva e responsiva. Semelhante à minha aplicação para a borracharia, priorizo o equilíbrio entre design moderno e eficiência no desenvolvimento web. A proposta inclui integração de API externa para aprimorar a comunicação e funcionalidades avançadas. Este projeto destaca-se pela combinação estratégica de tecnologias e design, consolidando-se como mais um diferencial no meu portfólio.",
       previewLink: "https://www.figma.com/file/1gMKTDd2qgzte1SN8sCudK/Sistema-de-Gest%C3%A3o-de-Cl%C3%ADnica-de-Psic%C3%B3logos?type=design&node-id=0-1&mode=design&t=RXrt8aBTVODIisiK-0",
       githubLink: "https://github.com/jhondharkyson520/clinicapsicologia",

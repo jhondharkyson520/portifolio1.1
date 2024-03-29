@@ -6,7 +6,7 @@ interface ThemeContextType {
 }
 
 const ThemeContext = createContext<ThemeContextType>({
-  themeMode: false,
+  themeMode: true,
   toggleTheme: () => {},
 });
 
@@ -17,7 +17,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     
     const storedThemeMode = localStorage.getItem('themeMode');
 
-    return storedThemeMode ? JSON.parse(storedThemeMode) : false;
+    return storedThemeMode ? JSON.parse(storedThemeMode) : true;
 
   });  
 
