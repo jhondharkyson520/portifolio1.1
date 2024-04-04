@@ -4,6 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fly {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+  0.1% {
+    transform: translateX(0) translateY(0) rotate(10deg);
+  }
+  100% {
+    transform: translateX(2600px) translateY(-500px) rotate(80deg);
+  }
+}
+
+.animate-plane {
+  position: absolute;
+  visibility: hidden;
+}
+
+.fly-animation {
+  visibility: visible;
+  animation: fly 15s infinite;
+}
+
+
+
+
+
 
 .light-mode {
   background-color: #F1F1F1; 
