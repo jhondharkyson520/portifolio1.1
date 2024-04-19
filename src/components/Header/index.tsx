@@ -207,7 +207,7 @@ export function Header({ skillsRef, projectsRef }: HeaderProps) {
                                 hover:text-custom-blue-hover-text hover:scale-110 hover:transition-all'
                             >
                                 { themeMode ? 
-                                    <>
+                                    <>  
                                         <MdLightMode size={30} />  
                                     </> 
                                     : 

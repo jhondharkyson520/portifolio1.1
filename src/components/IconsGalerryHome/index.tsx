@@ -10,6 +10,7 @@ import {
   BiLogoNodejs,
   BiLogoJavascript, 
 } from 'react-icons/bi';
+import { SiStyledcomponents } from "react-icons/si";
 import './index.css';
 import { useTheme } from '../../provider/ThemeProvider';
 
@@ -81,6 +82,15 @@ const IconGallery: React.FC = () => {
       : 
       'Tailwind CSS é um framework CSS "utility-first" para criar designs personalizados rapidamente.',
     },
+    {
+      name: 'Styled Components',
+      icon: <SiStyledcomponents size={90} color='#FA95DD' />,
+      url: 'https://styled-components.com/',
+      info: languageMode ? 
+        'Styled Components is a library for React and React Native that allows you to use component-level styles in your application. It uses tagged template literals to style your components.' 
+        : 
+        'Styled Components é uma biblioteca para React e React Native que permite usar estilos a nível de componente em sua aplicação. Ele usa template literals com marcação para estilizar seus componentes.',
+    },    
     {
       name: 'Git',
       icon: <BiLogoGit size={90} color='#F05639' />,
