@@ -6,7 +6,7 @@ interface LanguageContextType {
 }
 
 const LanguageContext = createContext<LanguageContextType>({
-  languageMode: true,
+  languageMode: false,
   toggleLanguage: () => {},
 });
 
@@ -17,7 +17,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     
     const storedLanguageMode = localStorage.getItem('languageMode');
 
-    return storedLanguageMode ? JSON.parse(storedLanguageMode) : true;
+    return storedLanguageMode ? JSON.parse(storedLanguageMode) : false;
 
   }); 
 

@@ -8,9 +8,11 @@ import {
   BiLogoTailwindCss,
   BiLogoGit,
   BiLogoNodejs,
-  BiLogoJavascript, 
+  BiLogoJavascript,
+  BiLogoDocker,
+  BiLogoPostgresql, 
 } from 'react-icons/bi';
-import { SiStyledcomponents } from "react-icons/si";
+import { SiExpress, SiStyledcomponents } from "react-icons/si";
 import './index.css';
 import { useTheme } from '../../provider/ThemeProvider';
 
@@ -118,6 +120,33 @@ const IconGallery: React.FC = () => {
       : 
       'Node.js é uma runtime JavaScript construída no motor V8 do Chrome.',
     },
+    {
+      name: 'Docker',
+      icon: <BiLogoDocker size={90} color='#1B63ED' />,
+      url: 'https://www.docker.com/',
+      info: languageMode ? 
+      'Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.' 
+      : 
+      'Docker é um conjunto de produtos de plataforma como serviço que usam virtualização em nível de sistema operacional para entregar software em pacotes chamados de contêineres.',
+    },
+    {
+      name: 'Postgres',
+      icon: <BiLogoPostgresql size={90} color='#32648C' />,
+      url: 'https://www.postgresql.org/docs/',
+      info: languageMode ? 
+      'PostgreSQL is a powerful, open source object-relational database system with a strong reputation for reliability, feature robustness, and performance.' 
+      : 
+      'PostgreSQL é um poderoso sistema de banco de dados objeto-relacional de código aberto com forte reputação por confiabilidade, robustez de recursos e desempenho.',
+    },
+    {
+      name: 'Express',
+      icon: <SiExpress size={90} color='#636464' />,
+      url: 'https://expressjs.com/',
+      info: languageMode ? 
+      'Express is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications.' 
+      : 
+      'Express é um framework de aplicação web minimalista e flexível para Node.js que fornece um conjunto robusto de recursos para desenvolver aplicações web e móveis.',
+    }
   ];
 
   

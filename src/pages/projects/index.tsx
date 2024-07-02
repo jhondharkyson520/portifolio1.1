@@ -16,8 +16,10 @@ import {
   BiLogoGit,
   BiLogoNodejs,
   BiLogoPostgresql,
-  BiLogoJavascript, 
+  BiLogoJavascript,
+  BiLogoDocker, 
 } from 'react-icons/bi';
+import { FcLinux } from "react-icons/fc";
 import { SiStyledcomponents, SiFirebase, SiSass, SiPrisma, SiExpress, SiFigma  } from "react-icons/si";
 
 interface ProjectsProps {
@@ -47,12 +49,12 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
 
   const projects = [
     {
-      title: languageMode ? "Landing Page for a Barber Shop" : "Landing Page de Barbearia",
+      title: languageMode ? "Landing Page for a Barber Shop" : "Landing Page de uma Fábrica de Máquinas",
       description: languageMode ? 
 
-        "This landing page was developed for a modern barber shop, using HTML, CSS3, and SASS. Featuring an elegant and responsive design, the page is packed with animation effects that create an engaging experience for visitors. It provides crucial information such as services offered, contact, and location of the barber shop. This project demonstrates a balanced combination of web design and development, making it a highlight in my portfolio." 
+        "This landing page was developed for a tire vulcanizing machine factory, using HTML, CSS3, and SASS. Featuring a sleek and responsive design, the page is filled with animation effects that create an engaging experience for visitors. It provides crucial information such as services offered, product list, contact details, and the factory's location. This project demonstrates a balanced combination of design and user experience. Access at: https://fabiopelicermaquinas.com.br/ " 
         
-        : "Esta landing page foi desenvolvida para uma barbearia moderna, usando HTML, CSS3 e SASS. Apresentando um design elegante e responsivo, a página é repleta de efeitos de animações que criam uma experiência envolvente para os visitantes. Ela fornece informações cruciais, como serviços oferecidos, contato e localização da barbearia. Este projeto demonstra uma combinação equilibrada de design e desenvolvimento web, tornando-o um destaque em meu portfólio.",
+        : "Esta landing page foi desenvolvida para uma fábrica de máquinas de vulcanizar pneus, usando HTML, CSS3 e SASS. Apresentando um design elegante e responsivo, a página é repleta de efeitos de animação que criam uma experiência envolvente para os visitantes. Ela fornece informações cruciais, como serviços oferecidos, lista de produtos, contato e localização da fábrica. Este projeto demonstra uma combinação equilibrada de design e experiência do usuário. Acesse em: https://fabiopelicermaquinas.com.br/",
       icon: <>
 
         <BiLogoHtml5 size={40} color='#DE4B25' />
@@ -62,16 +64,16 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <BiLogoGit size={40} color='#F05639' />
 
       </>,
-      previewLink: "https://projeto-barberdev-glij.vercel.app/",
-      githubLink: "https://github.com/jhondharkyson520/projeto-barberdev",
+      previewLink: "https://fabiopelicermaquinas.com.br/",
+      githubLink: "https://github.com/jhondharkyson520/pelicer1.2",
     },
     {
       title: languageMode ? "Landing Page for an Ice Cream Shop" : "Landing Page de Sorveteria",
       description: languageMode ? 
         
-        "Using ReactJS, Styled Components, and TypeScript, I've created an intuitive and responsive platform. Similar to my other projects, I prioritize the balance between design and efficiency in web development. It's a presentation page created for an ice cream parlor located in the city of Fronteira-MG." 
+        "Using ReactJS, Styled Components, and TypeScript, I've created an intuitive and responsive platform. Similar to my other projects, I prioritize the balance between design and efficiency in web development. It's a presentation page created for an ice cream parlor located in the city of Fronteira-MG. Access at: https://sorveteriapinguimfronteira.com/" 
         
-        : "Utilizando ReactJS, Styled Components e TypeScript, criei uma plataforma intuitiva e responsiva. Semelhante  aos meus outros projetos, priorizo o equilíbrio entre design e eficiência no desenvolvimento web. Trata  se de uma página de apresentação feito para uma sorveteria, localizada na cidade de Fronteira-MG",
+        : "Utilizando ReactJS, Styled Components e TypeScript, criei uma plataforma intuitiva e responsiva. Semelhante  aos meus outros projetos, priorizo o equilíbrio entre design e eficiência no desenvolvimento web. Trata  se de uma página de apresentação feito para uma sorveteria, localizada na cidade de Fronteira-MG. Acesse em: https://sorveteriapinguimfronteira.com/",
       icon: <>
 
         <BiLogoHtml5 size={40} color='#DE4B25' />
@@ -82,7 +84,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <BiLogoGit size={40} color='#F05639' />
 
       </>,
-      previewLink: "https://ice-cream-9z1q.vercel.app/",
+      previewLink: "https://sorveteriapinguimfronteira.com/",
       githubLink: "https://github.com/jhondharkyson520/ice-cream",
     },  
     {
@@ -144,7 +146,9 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <SiPrisma  size={40} color='#558D6C' />
         <SiExpress   size={40} color='#636464' />
         <BiLogoNodejs size={40} color='#5FAE4B' />
+        <BiLogoDocker size={40} color='#1B63ED' />
         <BiLogoGit size={40} color='#F05639' />
+        <FcLinux size={40}  />
 
       </>,
       previewLink: "https://www.figma.com/file/1gMKTDd2qgzte1SN8sCudK/Sistema-de-Gest%C3%A3o-de-Cl%C3%ADnica-de-Psic%C3%B3logos?type=design&node-id=0-1&mode=design&t=RXrt8aBTVODIisiK-0",
