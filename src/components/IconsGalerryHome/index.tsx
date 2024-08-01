@@ -19,6 +19,8 @@ import { useTheme } from '../../provider/ThemeProvider';
 
 
 
+
+
 const IconGallery: React.FC = () => {
   const [selectedIcon, setSelectedIcon] = useState<{ name: string; info: string } | null>(null);
 
@@ -154,7 +156,8 @@ const IconGallery: React.FC = () => {
 
   return (
     <div className='flex flex-col items-center mt-8'>
-      <div className='sm:flex grid grid-cols-2 items-center justify-center'>
+      <div className='xl:flex lg:grid-cols-6 md:grid-cols-4  grid-cols-3  grid items-center justify-center'>
+      
         {iconsData.map((data, index) => (
           <div
             key={index}
@@ -168,10 +171,14 @@ const IconGallery: React.FC = () => {
               setSelectedIcon(null);
             }}
             onClick={() => handleIconClick(data.url)}
+            
           >
+            
             <div
               className={`icon-container hover:transform hover:scale-110 ${hoveredIndex === index ? 'z-10' : 'z-0'}`}
+              
             >
+              
               {data.icon}
             </div>
           </div>

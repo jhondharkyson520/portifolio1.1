@@ -32,13 +32,13 @@
 
 
 .light-mode {
-  background-color: #F1F1F1; 
+  background-color: #FCFCFC; 
   color: #000000; 
 }
 
 
 .dark-mode {
-  background-color: #2E2A44; 
+  background-color: #06121E; 
   color: #ffffff; 
 }
 
@@ -66,6 +66,7 @@ header {
   position: relative;
   top: 0;
   z-index: 10;
+ 
 }
 
 footer {

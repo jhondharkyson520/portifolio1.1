@@ -22,6 +22,12 @@ import {
 import { FcLinux } from "react-icons/fc";
 import { SiStyledcomponents, SiFirebase, SiSass, SiPrisma, SiExpress, SiFigma  } from "react-icons/si";
 
+import imgPelicer from '../../assets/projects/imgPelicer.svg';
+import imgSorveteria from '../../assets/projects/imgSorveteria.svg';
+import imgKpPneus from '../../assets/projects/imgKpPneus.svg';
+import imgAgency from '../../assets/projects/imgAgency.svg';
+import imgConsult from '../../assets/projects/imgConsult.svg';
+
 interface ProjectsProps {
   projectsRef: React.RefObject<HTMLDivElement>;
 }
@@ -49,7 +55,30 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
 
   const projects = [
     {
-      title: languageMode ? "Landing Page for a Barber Shop" : "Landing Page de uma Fábrica de Máquinas",
+      title: languageMode ? "In Development: ConsultEasy" : "Em desenvolvimento: ConsultEasy",
+      description: languageMode ? "Using ReactJS, Next, CSS3, Node.js, and TypeScript, I'm creating an intuitive and responsive platform. Similar to my tire repair shop application, I prioritize the balance between modern design and efficiency in web development. The proposal includes integrating an external API to enhance communication and advanced functionalities. This project stands out for its strategic combination of technologies and design, consolidating itself as another differential in my portfolio." : "Utilizando ReactJS, Next, CSS3, Node.js e TypeScript, estou criando uma plataforma intuitiva e responsiva. Semelhante à minha aplicação para a borracharia, priorizo o equilíbrio entre design moderno e eficiência no desenvolvimento web. A proposta inclui integração de API externa para aprimorar a comunicação e funcionalidades avançadas. Este projeto destaca-se pela combinação estratégica de tecnologias e design, consolidando-se como mais um diferencial no meu portfólio.",
+      icon: <>
+
+        <BiLogoHtml5 size={40} color='#DE4B25' />
+        <BiLogoCss3 size={40} color='#0974BC' />
+        <SiSass size={40} color='#C76495' />
+        <BiLogoReact size={40} color='#66DBFB' />
+        <BiLogoTypescript size={40} color='#377CC8' />
+        <BiLogoPostgresql  size={40} color='#32648C' />
+        <SiPrisma  size={40} color='#558D6C' />
+        <SiExpress   size={40} color='#636464' />
+        <BiLogoNodejs size={40} color='#5FAE4B' />
+        <BiLogoDocker size={40} color='#1B63ED' />
+        <BiLogoGit size={40} color='#F05639' />
+        <FcLinux size={40}  />
+
+      </>,
+      imgSrc: `${imgConsult}`,
+      previewLink: "https://nextjsconsult.vercel.app/",
+      githubLink: "https://github.com/jhondharkyson520/clinicapsicologia",
+    },
+    {
+      title: languageMode ? "Landing Page for a tire machine" : "Landing Page de uma Fábrica de Máquinas",
       description: languageMode ? 
 
         "This landing page was developed for a tire vulcanizing machine factory, using HTML, CSS3, and SASS. Featuring a sleek and responsive design, the page is filled with animation effects that create an engaging experience for visitors. It provides crucial information such as services offered, product list, contact details, and the factory's location. This project demonstrates a balanced combination of design and user experience. Access at: https://fabiopelicermaquinas.com.br/ " 
@@ -64,6 +93,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <BiLogoGit size={40} color='#F05639' />
 
       </>,
+      imgSrc: `${imgPelicer}` ,
       previewLink: "https://fabiopelicermaquinas.com.br/",
       githubLink: "https://github.com/jhondharkyson520/pelicer1.2",
     },
@@ -84,6 +114,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <BiLogoGit size={40} color='#F05639' />
 
       </>,
+      imgSrc: `${imgSorveteria}` ,
       previewLink: "https://sorveteriapinguimfronteira.com/",
       githubLink: "https://github.com/jhondharkyson520/ice-cream",
     },  
@@ -105,6 +136,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <BiLogoGit size={40} color='#F05639' />
 
       </>,
+      imgSrc: `${imgKpPneus}` ,
       previewLink: "https://kppneus.vercel.app/",
       githubLink: "https://github.com/jhondharkyson520/kppneus",
     },
@@ -125,6 +157,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <BiLogoGit size={40} color='#F05639' />
 
       </>,
+      imgSrc: `${imgAgency}` ,
       previewLink: "https://cripto-umber.vercel.app/",
       githubLink: "https://github.com/jhondharkyson520/cripto",
     },  
@@ -151,6 +184,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <FcLinux size={40}  />
 
       </>,
+      imgSrc: `${imgConsult}`,
       previewLink: "https://www.figma.com/file/1gMKTDd2qgzte1SN8sCudK/Sistema-de-Gest%C3%A3o-de-Cl%C3%ADnica-de-Psic%C3%B3logos?type=design&node-id=0-1&mode=design&t=RXrt8aBTVODIisiK-0",
       githubLink: "https://github.com/jhondharkyson520/clinicapsicologia",
     }
@@ -164,139 +198,67 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
       </p>
 
       <div className="grid grid-cols-1 mt-10 sm:flex sm:flex-wrap justify-center items-center gap-8">
-      {projectsConstruct.map((project, index) => (
+      {projects.map((project, index) => (
           <div key={index} className="w-full p-8">
-            <div className="sm:flex grid grid-cols-1 gap-8 ">
-             <img 
-                  src={SCGPimg} 
-                  title="Pré-visualização do site" 
-                  className="rounded-2xl sm:max-w-xl w-full h-96" 
-                />
+            <div className="sm:flex grid grid-cols-1 gap-8 items-center justify-center ">
              
-             <div className={`flex flex-col items-center justify-center p-5 rounded-2xl mt-4 sm:w-3/4 w-full ${themeMode ? 'bg-theme-dark-projects' : 'bg-theme-light-projects'}`}>
-                
-                <span>
-                  <p className="font-bold">{project.title}</p>
-                  <p className="font-medium">{languageMode ? <>Description:</> : <>Descrição:</>}</p>
-                  <p>{project.description}</p>
-                </span>
-
-                <div
-                  className={`mt-3 sm:flex grid grid-cols-2`}
-                >
-                  {project.icon}
-                </div>
-
-                <div className="relative flex flex-col justify-center h-auto mt-4 mb-6">
-                  <div className="flex items-center justify-center">
-
-                    <Link 
-                      to={project.previewLink} 
-                      target="_blank" 
-                      className={`${themeMode ? 'text-white' : 'text-black' } 
-                      hover:transition-all hover:scale-110 flex items-center px-5`}
-                    >
-                      
-                      <AiFillEye size={25} />
-                      <p className="ml-2 text-center font-medium text-lg cursor-pointer">
-
-                      {languageMode ? <>View design</> : <>Visualizar design</>}
-                      
-                      </p>
-                    
-                    </Link>
-
-                    <Link 
-                      to={project.githubLink} 
-                      target="_blank" 
-                      className={`${themeMode ? 'text-white' : 'text-black' } 
-                      hover:transition-all hover:scale-110 flex items-center px-5`}
-                    >
-                      
-                      <AiFillGithub size={25} />
-                      <p className="ml-2 text-center font-medium text-lg cursor-pointer">
-                        
-                        GitHub
-                        
-                      </p>
-                    
-                    </Link>    
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-
-        {projects.map((project, index) => (
-
-          <div key={index} className="w-full p-8">
-            <div className="sm:flex grid grid-cols-1 gap-8">
-              <div className="relative justify-center bg-white border-slate-700 rounded-2xl shadow-2xl" >
-                <iframe 
-                  src={project.previewLink} 
+             
+             <div className={`flex sm:flex-row flex-col items-center justify-center rounded-2xl mt-4 sm:w-3/4 w-full ${themeMode ? 'bg-theme-dark-projects' : 'bg-theme-light-projects'}`}>
+                <img 
+                  src={project.imgSrc} 
                   title="Pré-visualização do site" 
-                  className="rounded-2xl sm:max-w-xl w-full h-96" scrolling="no"
-                >
-                </iframe>
-              </div>
+                  className="rounded-2xl sm:max-w-xl w-full " 
+                />
 
-              <div 
-                className={`flex flex-col ${themeMode ? 'bg-theme-dark-projects' 
-                : 'bg-theme-light-projects'} items-center justify-center p-5 
-                rounded-2xl mt-4 sm:w-3/4 w-full`}
-              >
+                <div className="flex flex-col items-center justify-center text-center">
+                  <span>
+                    <p className="font-bold">{project.title}</p>
+                    <p className="font-medium">{languageMode ? <>Description:</> : <>Descrição:</>}</p>
+                    <p>{project.description}</p>
+                  </span>
 
-                <span>
-                  <p className="font-bold">
-                    {languageMode ? <>Project title: {project.title}</> : <>Título do Projeto: {project.title}</>}
-                  </p>
-                  <p className="font-medium">{languageMode ? <>Description:</> : <>Descrição:</>}</p>
-                  <p>{project.description}</p>
-                </span>
+                  <div
+                    className={`mt-3 sm:flex grid grid-cols-2`}
+                  >
+                    {project.icon}
+                  </div>
 
-                <div
-                  className={`mt-3 flex icon-container`}
-                >
-                  {project.icon}
-                </div>
+                  <div className="relative flex flex-col justify-center h-auto mt-4 mb-6">
+                    <div className="flex items-center justify-center">
 
-                <div className="relative flex flex-col justify-center h-auto mt-4 mb-6">
-                  <div className="flex items-center justify-center">
-
-                    <Link 
-                      to={project.previewLink} 
-                      target="_blank" 
-                      className={`${themeMode ? 'text-white' : 'text-black' } 
-                      hover:transition-all hover:scale-110 flex items-center px-5`}
-                    >
-                      
-                      <AiFillEye size={25}/>
-                      <p className="ml-2 text-center font-medium text-lg cursor-pointer">
-
-                        {languageMode ? <>View</> : <>Visualizar</>}
-
-                      </p>
-                    
-                    </Link>
-
-                    <Link 
-                      to={project.githubLink} 
-                      target="_blank" 
-                      className={`${themeMode ? 'text-white' : 'text-black' } 
-                      hover:transition-all hover:scale-110 flex items-center px-5`}
-                    >
-                      
-                      <AiFillGithub size={25} />
-                      <p className='ml-2 text-center font-medium text-lg cursor-pointer'>
+                      <Link 
+                        to={project.previewLink} 
+                        target="_blank" 
+                        className={`${themeMode ? 'text-white' : 'text-black' } 
+                        hover:transition-all hover:scale-110 flex items-center px-5`}
+                      >
                         
-                        GitHub
-                        
-                      </p>
-                    
-                    </Link>
+                        <AiFillEye size={25} />
+                        <p className="ml-2 text-center font-medium text-lg cursor-pointer">
 
+                        {languageMode ? <>View design</> : <>Visualizar design</>}
+                        
+                        </p>
+                      
+                      </Link>
+
+                      <Link 
+                        to={project.githubLink} 
+                        target="_blank" 
+                        className={`${themeMode ? 'text-white' : 'text-black' } 
+                        hover:transition-all hover:scale-110 flex items-center px-5`}
+                      >
+                        
+                        <AiFillGithub size={25} />
+                        <p className="ml-2 text-center font-medium text-lg cursor-pointer">
+                          
+                          GitHub
+                          
+                        </p>
+                      
+                      </Link>    
+
+                    </div>
                   </div>
                 </div>
               </div>
@@ -304,7 +266,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
           </div>
         ))}
 
-      
+        
       </div>
       <ScrollToTopButton />
       <WhatsAppButton />

@@ -3,11 +3,14 @@ import { useLanguage } from "../../provider/LanguageProvider";
 
 
 
+
+
 export function About() {
   const { languageMode } = useLanguage();
 
   return (
-    <div className='flex-col sm:mt-10 w-full mt-10 items-center text-center justify-center' id='about'>
+    <div className='flex items-center justify-center'>
+      <div className='flex-col sm:mt-10 max-w-4xl mt-10 items-center text-center justify-center' id='about'>
       <p className='text-xl'>
         {languageMode ? <>📚 Bachelor's Thesis 🎓</> : <>📚 Tese de Conclusão de Curso (TCC) 🎓</>}
       </p>
@@ -35,6 +38,7 @@ export function About() {
         {languageMode ? <>📖 To read the full thesis,<a target='_blank' href='https://drive.google.com/file/d/12YMQ-Hquc01EGwfHT3qZi5eTe8kF-RZC/view?usp=sharing'> click here.</a></> : <>📖 Para ler a tese completa, <a target='_blank' href='https://drive.google.com/file/d/12YMQ-Hquc01EGwfHT3qZi5eTe8kF-RZC/view?usp=sharing'>clique aqui.</a></>}
       </p>
 
+    </div>
     </div>
   );
 }
