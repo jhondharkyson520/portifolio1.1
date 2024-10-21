@@ -9,7 +9,7 @@ interface SkillsProps {
 
 export function Skills() {
   const { languageMode } = useLanguage();
-  const skillsRef = useRef(null); // Criação da referência
+  const skillsRef = useRef(null);
 
   return (
     <div>

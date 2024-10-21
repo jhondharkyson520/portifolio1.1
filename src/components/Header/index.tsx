@@ -1,34 +1,14 @@
 import { Link } from 'react-router-dom';
-import logoS from '../../assets/logoHeaderLight.png';
 import iconLondon from '../../assets/iconLondon.png';
 import iconBrazil from '../../assets/iconBrazil.png';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { useTheme } from '../../provider/ThemeProvider';
 import { useLanguage } from '../../provider/LanguageProvider';
 
-
-
-
-
-
-interface HeaderProps {
-    skillsRef: React.RefObject<HTMLDivElement>,
-    projectsRef: React.RefObject<HTMLDivElement>,
-  }
-  export function Header() {
-    const projectsRef = useRef(null);
-    const skillsRef = useRef(null);
   
-    return (
-      <div>
-        <HeaderContent projectsRef={projectsRef} skillsRef={skillsRef} />
-      </div>
-    );
-  }
-  
-export function HeaderContent({ skillsRef, projectsRef }: HeaderProps) {
+export function Header() {
     const [openMenu, setOpenMenu] = useState(false);
     const { toggleTheme, themeMode } = useTheme();
     const {toggleLanguage, languageMode} = useLanguage();
@@ -42,17 +22,6 @@ export function HeaderContent({ skillsRef, projectsRef }: HeaderProps) {
     useEffect(() => {
         
       }, [languageMode]);
-
-        
-      
-    const toggleMenu = () => {
-        setOpenMenu(!openMenu);
-    };
-
-    const closeMenu = () => {
-        setOpenMenu(false);
-    };
-
     useEffect(() => {
         if (openMenu) {
             document.body.classList.add('overflow-hidden');
@@ -65,23 +34,33 @@ export function HeaderContent({ skillsRef, projectsRef }: HeaderProps) {
         };
     }, [openMenu]);
 
-    const handleScrollToSkills = () => {
-        closeMenu();
-        if (skillsRef.current) {
-          skillsRef.current.scrollIntoView({ behavior: 'smooth' });
+    const handleScrollToSkills = (event: any) => {
+        event.preventDefault(); 
+    
+        const element = document.getElementById("skills");
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start", 
+            });
         }
-        
     };
+    
 
-    const handleScrollToProjects = () => {
-        closeMenu();
-        if (projectsRef.current) {
-          projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-        }        
+    const handleScrollToProjects = (event: any) => {
+        event.preventDefault(); 
+    
+        const element = document.getElementById("projects");
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start", 
+            });
+        }       
     };
 
     return (
-        <header className={`  mt-8 h-20 shadow-xl`}>
+        <header className={`mt-8 h-20 shadow-xl`}>
             
             
 

@@ -6,6 +6,7 @@ import SCGPimg from '../../assets/projectsConstruct/SGCP.png'
 import { useTheme } from "../../provider/ThemeProvider";
 import { useLanguage } from "../../provider/LanguageProvider";
 import { useRef } from "react";
+import { FaFolderTree } from "react-icons/fa6";
 
 import {
   BiLogoHtml5,
@@ -19,14 +20,15 @@ import {
   BiLogoJavascript,
   BiLogoDocker, 
 } from 'react-icons/bi';
+import { TbBrandNextjs } from "react-icons/tb";
 import { FcLinux } from "react-icons/fc";
 import { SiStyledcomponents, SiFirebase, SiSass, SiPrisma, SiExpress, SiFigma  } from "react-icons/si";
 
 import imgPelicer from '../../assets/projects/imgPelicer.svg';
 import imgSorveteria from '../../assets/projects/imgSorveteria.svg';
-import imgKpPneus from '../../assets/projects/imgKpPneus.svg';
 import imgAgency from '../../assets/projects/imgAgency.svg';
 import imgConsult from '../../assets/projects/imgConsult.svg';
+
 
 interface ProjectsProps {
   projectsRef: React.RefObject<HTMLDivElement>;
@@ -43,7 +45,7 @@ export function Projects() {
   const projectsRef = useRef(null);
 
   return (
-    <div>
+    <div className=" w-full flex items-center justify-center">
       <ProjectsContent projectsRef={projectsRef} />
     </div>
   );
@@ -55,8 +57,11 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
 
   const projects = [
     {
-      title: languageMode ? "In Development: ConsultEasy" : "Em desenvolvimento: ConsultEasy",
-      description: languageMode ? "Using ReactJS, Next, CSS3, Node.js, and TypeScript, I'm creating an intuitive and responsive platform. Similar to my tire repair shop application, I prioritize the balance between modern design and efficiency in web development. The proposal includes integrating an external API to enhance communication and advanced functionalities. This project stands out for its strategic combination of technologies and design, consolidating itself as another differential in my portfolio." : "Utilizando ReactJS, Next, CSS3, Node.js e TypeScript, estou criando uma plataforma intuitiva e responsiva. Semelhante à minha aplicação para a borracharia, priorizo o equilíbrio entre design moderno e eficiência no desenvolvimento web. A proposta inclui integração de API externa para aprimorar a comunicação e funcionalidades avançadas. Este projeto destaca-se pela combinação estratégica de tecnologias e design, consolidando-se como mais um diferencial no meu portfólio.",
+      title: languageMode ? "Clinic Management System" : "Gestão de Clínicas",
+      description: languageMode ? 
+      "I developed a web system for clinic management, using Docker to ensure consistent environments and Node.js with Express for an efficient REST API. The front-end is built with Next.js, React.js, and TypeScript, providing a dynamic and typed interface, while Sass is used for advanced styling. Prisma manages the Postgres database, and Nginx on the VPS server optimizes performance and request handling. The system integrates features for appointment scheduling, patient management, and financial administration." 
+      
+      : "Desenvolvi um sistema web para gestão de clínicas, utilizando Docker para garantir ambientes consistentes e Node.js com Express para uma API REST eficiente. O front-end é construído com Next.js, React.js e TypeScript, oferecendo uma interface dinâmica e tipada, enquanto o Sass é usado para estilização avançada. O Prisma gerencia o banco de dados Postgres e o Nginx no servidor VPS otimiza o desempenho e o gerenciamento de solicitações. O sistema integra funcionalidades para agendamento de consultas, controle de pacientes e gestão financeira.",
       icon: <>
 
         <BiLogoHtml5 size={40} color='#DE4B25' />
@@ -70,6 +75,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <BiLogoNodejs size={40} color='#5FAE4B' />
         <BiLogoDocker size={40} color='#1B63ED' />
         <BiLogoGit size={40} color='#F05639' />
+        <TbBrandNextjs size={40} />
         <FcLinux size={40}  />
 
       </>,
@@ -78,7 +84,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
       githubLink: "https://github.com/jhondharkyson520/clinicapsicologia",
     },
     {
-      title: languageMode ? "Landing Page for a tire machine" : "Landing Page de uma Fábrica de Máquinas",
+      title: languageMode ? "Tire machine" : "Fábrica de Máquinas",
       description: languageMode ? 
 
         "This landing page was developed for a tire vulcanizing machine factory, using HTML, CSS3, and SASS. Featuring a sleek and responsive design, the page is filled with animation effects that create an engaging experience for visitors. It provides crucial information such as services offered, product list, contact details, and the factory's location. This project demonstrates a balanced combination of design and user experience. Access at: https://fabiopelicermaquinas.com.br/ " 
@@ -91,6 +97,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
         <SiSass size={40} color='#C76495' />
         <BiLogoJavascript size={40} color='#F0DB4F' />
         <BiLogoGit size={40} color='#F05639' />
+        <FaFolderTree size={40} color='#303030'/>
 
       </>,
       imgSrc: `${imgPelicer}` ,
@@ -98,12 +105,12 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
       githubLink: "https://github.com/jhondharkyson520/pelicer1.2",
     },
     {
-      title: languageMode ? "Landing Page for an Ice Cream Shop" : "Landing Page de Sorveteria",
+      title: languageMode ? "Ice Cream Shop" : "Sorveteria",
       description: languageMode ? 
         
-        "Using ReactJS, Styled Components, and TypeScript, I've created an intuitive and responsive platform. Similar to my other projects, I prioritize the balance between design and efficiency in web development. It's a presentation page created for an ice cream parlor located in the city of Fronteira-MG. Access at: https://sorveteriapinguimfronteira.com/" 
+        "I developed a landing page for an ice cream shop using React.js and Styled Components to create a modern and responsive interface. The application was built with TypeScript to ensure robust and typed code, and Git was used for version control and collaboration. The project focuses on an attractive and efficient visual presentation, highlighting the shop's products and other information. Access it at: https://sorveteriapinguimfronteira.com/" 
         
-        : "Utilizando ReactJS, Styled Components e TypeScript, criei uma plataforma intuitiva e responsiva. Semelhante  aos meus outros projetos, priorizo o equilíbrio entre design e eficiência no desenvolvimento web. Trata  se de uma página de apresentação feito para uma sorveteria, localizada na cidade de Fronteira-MG. Acesse em: https://sorveteriapinguimfronteira.com/",
+        : "Desenvolvi uma landing page para uma sorveteria utilizando React.js e Styled Components para criar uma interface moderna e responsiva. A aplicação foi construída com TypeScript para garantir um código robusto e tipado, e o Git foi usado para controle de versão e colaboração. O projeto foca em uma apresentação visual atraente e eficiente, destacando os produtos e outras informações da sorveteria. Acesse em: https://sorveteriapinguimfronteira.com/",
       icon: <>
 
         <BiLogoHtml5 size={40} color='#DE4B25' />
@@ -118,48 +125,27 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
       previewLink: "https://sorveteriapinguimfronteira.com/",
       githubLink: "https://github.com/jhondharkyson520/ice-cream",
     },  
-    {
-      title: languageMode ? 'Landing Page for a Tire Repair Shop' : 'Landing Page de Borracharia',
-      description: languageMode ? 
-
-      'I developed an online platform for my tire repair shop using ReactJS, TypeScript, and styled it with Tailwind CSS. I created a modern, responsive, and intuitive interface that provides visitors with an engaging experience. Additionally, I integrated an external API to optimize communication with tire and automotive parts suppliers, ensuring that the tire shop`s inventory is always up to date. This project represents a balanced combination of web design and development and is a highlight in my portfolio.' 
-      
-      : "Desenvolvi uma plataforma online para minha borracharia, usando ReactJS, TypeScript e aplicando o estilo com Tailwind CSS. Criei uma interface moderna, responsiva e intuitiva que oferece aos visitantes uma experiência envolvente. Além disso, integrei uma API externa para otimizar a comunicação com fornecedores de pneus e peças automotivas, garantindo que o estoque da borracharia esteja sempre atualizado. Este projeto representa uma combinação equilibrada de design e desenvolvimento web e é um destaque no meu portfólio.",
-      icon: <>
-
-        <BiLogoHtml5 size={40} color='#DE4B25' />
-        <BiLogoCss3 size={40} color='#0974BC' />
-        <BiLogoTailwindCss size={40} color='#3EBFF8' />
-        <BiLogoReact size={40} color='#66DBFB' />
-        <BiLogoTypescript size={40} color='#377CC8' />        
-        <SiFirebase size={40} color='#F68320' />
-        <BiLogoGit size={40} color='#F05639' />
-
-      </>,
-      imgSrc: `${imgKpPneus}` ,
-      previewLink: "https://kppneus.vercel.app/",
-      githubLink: "https://github.com/jhondharkyson520/kppneus",
-    },
     
     {
-      title: languageMode ? "Cryptocurrency List" : "Criptomoedas",
+      title: languageMode ? "Agency" : "Agência",
       description: languageMode ? 
       
-        "I developed an impressive cryptocurrency list page using ReactJS and consuming an external cryptocurrency API. This application offers an informative and engaging experience for cryptocurrency investors. Real-time prices and data of various cryptocurrencies are presented clearly and accessibly. Additionally, the application allows customization of the list to track the most interesting cryptocurrencies. This project demonstrates my commitment to attractive design and delivering valuable information to cryptocurrency investors, making it a highlight in my portfolio." 
+        "I developed a landing page for an agency using React.js and Styled Components to create a modern and responsive interface. The application was built with TypeScript to ensure robust and typed code, and Git was used for version control and collaboration. The project focuses on an attractive and efficient visual presentation, highlighting the shop's products and other information." 
         
-        : "Desenvolvi uma página de lista de criptomoedas impressionante usando ReactJS e consumindo uma API externa de criptomoedas. Essa aplicação oferece uma experiência informativa e envolvente para os investidores de criptomoedas. Os preços e dados em tempo real de várias criptomoedas são apresentados de forma clara e acessível. Além disso, a aplicação permite a personalização da lista para acompanhar as criptomoedas de maior interesse. Este projeto demonstra meu compromisso com o design atraente e a entrega de informações valiosas aos investidores de criptomoedas, sendo um destaque no meu portfólio.",
+        : "Desenvolvi uma landing page para uma agência utilizando React.js e Styled Components para criar uma interface moderna e responsiva. A aplicação foi construída com TypeScript para garantir um código robusto e tipado, e o Git foi usado para controle de versão e colaboração. O projeto foca em uma apresentação visual atraente e eficiente, destacando os produtos e outras informações.",
       icon: <>
 
         <BiLogoHtml5 size={40} color='#DE4B25' />
         <BiLogoCss3 size={40} color='#0974BC' />
+        <SiStyledcomponents size={40} color='#FA95DD' />
         <BiLogoReact size={40} color='#66DBFB' />
-        <BiLogoTypescript size={40} color='#377CC8' />
+        <BiLogoTypescript size={40} color='#377CC8' />        
         <BiLogoGit size={40} color='#F05639' />
 
       </>,
       imgSrc: `${imgAgency}` ,
-      previewLink: "https://cripto-umber.vercel.app/",
-      githubLink: "https://github.com/jhondharkyson520/cripto",
+      previewLink: "https://agency-nine-psi.vercel.app/",
+      githubLink: "https://github.com/jhondharkyson520/agency",
     },  
     
   ];
@@ -192,25 +178,27 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
 
 
   return (
-    <div className="w-full mt-16 items-center text-center justify-center" id="projects" ref={projectsRef}>
-      <p className="text-xl">
-        {languageMode ? <>🌟 Here are some of my projects:</> : <>🌟 Aqui estão alguns dos meus projetos:</>}
+    <div className=" max-w-6xl mt-16 items-center text-center justify-center" id="projects" ref={projectsRef}  >
+
+    
+
+      <p className="text-xl pt-11">
+        {languageMode ? <><i className="text-3xl" >🌟 </i> <strong>Here are some of my projects:</strong></> : <><i className="text-3xl">🌟 </i> <strong>Aqui estão alguns dos meus projetos:</strong></>}
       </p>
 
-      <div className="grid grid-cols-1 mt-10 sm:flex sm:flex-wrap justify-center items-center gap-8">
+      <div className="grid grid-cols-1 sm:flex sm:flex-wrap justify-center items-center" >
       {projects.map((project, index) => (
-          <div key={index} className="w-full p-8">
-            <div className="sm:flex grid grid-cols-1 gap-8 items-center justify-center ">
+          <div key={index} className="w-full p-8" data-aos="fade-up" data-aos-delay="300">
+            <div className="sm:flex grid grid-cols-1 mt-9 gap-8 items-center justify-center "   >
              
              
-             <div className={`flex sm:flex-row flex-col items-center justify-center rounded-2xl mt-4 sm:w-3/4 w-full ${themeMode ? 'bg-theme-dark-projects' : 'bg-theme-light-projects'}`}>
-                <img 
+              <img 
                   src={project.imgSrc} 
                   title="Pré-visualização do site" 
                   className="rounded-2xl sm:max-w-xl w-full " 
                 />
 
-                <div className="flex flex-col items-center justify-center text-center">
+                <div className="flex flex-col items-center justify-center text-center" >
                   <span>
                     <p className="font-bold">{project.title}</p>
                     <p className="font-medium">{languageMode ? <>Description:</> : <>Descrição:</>}</p>
@@ -218,7 +206,8 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
                   </span>
 
                   <div
-                    className={`mt-3 sm:flex grid grid-cols-2`}
+                    className={`mt-3 sm:flex grid grid-cols-6 items-center justify-center text-center`}
+                 
                   >
                     {project.icon}
                   </div>
@@ -236,7 +225,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
                         <AiFillEye size={25} />
                         <p className="ml-2 text-center font-medium text-lg cursor-pointer">
 
-                        {languageMode ? <>View design</> : <>Visualizar design</>}
+                        {languageMode ? <>View</> : <>Visualizar</>}
                         
                         </p>
                       
@@ -260,7 +249,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
 
                     </div>
                   </div>
-                </div>
+              
               </div>
             </div>
           </div>
