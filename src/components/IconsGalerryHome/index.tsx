@@ -10,7 +10,7 @@ import {
   BiLogoNodejs,
   BiLogoJavascript,
   BiLogoDocker,
-  BiLogoPostgresql, 
+  BiLogoPostgresql
 } from 'react-icons/bi';
 import { SiExpress, SiStyledcomponents } from "react-icons/si";
 import './index.css';

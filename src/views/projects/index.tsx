@@ -28,6 +28,8 @@ import imgPelicer from '../../assets/projects/imgPelicer.svg';
 import imgSorveteria from '../../assets/projects/imgSorveteria.svg';
 import imgAgency from '../../assets/projects/imgAgency.svg';
 import imgConsult from '../../assets/projects/imgConsult.svg';
+import imgNotes from '../../assets/projects/imgColorNotes.svg';
+import imgDiet from '../../assets/projects/imgDietHome.svg';
 
 
 interface ProjectsProps {
@@ -56,12 +58,14 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
   const { languageMode } = useLanguage();
 
   const projects = [
+    
+    
     {
       title: languageMode ? "Clinic Management System" : "Gestão de Clínicas",
       description: languageMode ? 
-      "I developed a web system for clinic management, using Docker to ensure consistent environments and Node.js with Express for an efficient REST API. The front-end is built with Next.js, React.js, and TypeScript, providing a dynamic and typed interface, while Sass is used for advanced styling. Prisma manages the Postgres database, and Nginx on the VPS server optimizes performance and request handling. The system integrates features for appointment scheduling, patient management, and financial administration." 
+      "Complete system for medical clinics, with features such as appointment scheduling, patient management and financial control. The application has a robust backend and a dynamic frontend to optimize the user experience." 
       
-      : "Desenvolvi um sistema web para gestão de clínicas, utilizando Docker para garantir ambientes consistentes e Node.js com Express para uma API REST eficiente. O front-end é construído com Next.js, React.js e TypeScript, oferecendo uma interface dinâmica e tipada, enquanto o Sass é usado para estilização avançada. O Prisma gerencia o banco de dados Postgres e o Nginx no servidor VPS otimiza o desempenho e o gerenciamento de solicitações. O sistema integra funcionalidades para agendamento de consultas, controle de pacientes e gestão financeira.",
+      : "Sistema completo para clínicas médicas, com funcionalidades como agendamento de consultas, gerenciamento de pacientes e controle financeiro. A aplicação possui um backend robusto e um frontend dinâmico para otimizar a experiência dos usuários.",
       icon: <>
 
         <BiLogoHtml5 size={40} color='#DE4B25' />
@@ -80,16 +84,52 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
 
       </>,
       imgSrc: `${imgConsult}`,
-      previewLink: "https://nextjsconsult.vercel.app/",
-      githubLink: "https://github.com/jhondharkyson520/clinicapsicologia",
+      previewLink: "https://clinic-frontend-hazel.vercel.app/signup",
+      githubLink: "https://github.com/jhondharkyson520/clinic-backend",
+    },
+      
+    {
+      title: languageMode ? "Task Management App" : "Aplicativo de Gerenciamento de Tarefas",
+      description: languageMode ? 
+        "description hhere" 
+      : 
+        "Aplicativo web para gerenciamento de tarefas, com um backend construído utilizando Node.js, Express, TypeScript e PostgreSQL.",
+      icon: <>
+        <BiLogoReact size={40} color='#66DBFB' />
+        <BiLogoNodejs size={40} color='#5FAE4B' />
+        <BiLogoPostgresql size={40} color='#32648C' />
+        <SiPrisma size={40} color='#558D6C' />
+        <SiExpress size={40} color='#636464' />
+        <BiLogoDocker size={40} color='#1B63ED' />
+        <BiLogoGit size={40} color='#F05639' />
+      </>,
+      imgSrc: `${imgNotes}`,
+      previewLink: "https://color-notes-ke3m.vercel.app/",
+      githubLink: "https://github.com/jhondharkyson520/corelab",
+    },
+    {
+      title: languageMode ? "Diet AI" : "Dieta IA",
+      description: languageMode ? 
+        "Description here" 
+      : 
+        "Aplicação full-stack para gestão de dietas, permitindo que usuários criem planos alimentares personalizados utilizando inteligencia artificial. Conta com um backend robusto e um frontend intuitivo.",
+      icon: <>
+        <BiLogoReact size={40} color='#66DBFB' />
+        <BiLogoNodejs size={40} color='#5FAE4B' />
+        <BiLogoDocker size={40} color='#1B63ED' />
+        <BiLogoGit size={40} color='#F05639' />
+      </>,
+      imgSrc: `${imgDiet}`,
+      previewLink: "https://gemini-diet-frontend.vercel.app/",
+      githubLink: "https://github.com/jhondharkyson520/GeminiDietNode",
     },
     {
       title: languageMode ? "Tire machine" : "Fábrica de Máquinas",
       description: languageMode ? 
 
-        "This landing page was developed for a tire vulcanizing machine factory, using HTML, CSS3, and SASS. Featuring a sleek and responsive design, the page is filled with animation effects that create an engaging experience for visitors. It provides crucial information such as services offered, product list, contact details, and the factory's location. This project demonstrates a balanced combination of design and user experience. Access at: https://fabiopelicermaquinas.com.br/ " 
+        "Institutional website for a tire vulcanization machine factory. The project features a responsive design, animations and an engaging interface for visitors. Access at: https://fabiopelicermaquinas.com.br/ " 
         
-        : "Esta landing page foi desenvolvida para uma fábrica de máquinas de vulcanizar pneus, usando HTML, CSS3 e SASS. Apresentando um design elegante e responsivo, a página é repleta de efeitos de animação que criam uma experiência envolvente para os visitantes. Ela fornece informações cruciais, como serviços oferecidos, lista de produtos, contato e localização da fábrica. Este projeto demonstra uma combinação equilibrada de design e experiência do usuário. Acesse em: https://fabiopelicermaquinas.com.br/",
+        : "Site institucional para uma fábrica de máquinas de vulcanização de pneus. O projeto conta com um design responsivo, animações e uma interface envolvente para os visitantes. Acesse em: https://fabiopelicermaquinas.com.br/",
       icon: <>
 
         <BiLogoHtml5 size={40} color='#DE4B25' />
@@ -102,15 +142,15 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
       </>,
       imgSrc: `${imgPelicer}` ,
       previewLink: "https://fabiopelicermaquinas.com.br/",
-      githubLink: "https://github.com/jhondharkyson520/pelicer1.2",
+      githubLink: "https://github.com/jhondharkyson520/Pelicer-M-quinas",
     },
     {
       title: languageMode ? "Ice Cream Shop" : "Sorveteria",
       description: languageMode ? 
         
-        "I developed a landing page for an ice cream shop using React.js and Styled Components to create a modern and responsive interface. The application was built with TypeScript to ensure robust and typed code, and Git was used for version control and collaboration. The project focuses on an attractive and efficient visual presentation, highlighting the shop's products and other information. Access it at: https://sorveteriapinguimfronteira.com/" 
+        "Modern and responsive landing page for an ice cream shop, highlighting the products and offering an attractive visual experience. Access it at: https://sorveteriapinguimfronteira.com/" 
         
-        : "Desenvolvi uma landing page para uma sorveteria utilizando React.js e Styled Components para criar uma interface moderna e responsiva. A aplicação foi construída com TypeScript para garantir um código robusto e tipado, e o Git foi usado para controle de versão e colaboração. O projeto foca em uma apresentação visual atraente e eficiente, destacando os produtos e outras informações da sorveteria. Acesse em: https://sorveteriapinguimfronteira.com/",
+        : "Landing page moderna e responsiva para uma sorveteria, destacando os produtos e oferecendo uma experiência visual atrativa. Acesse em: https://sorveteriapinguimfronteira.com/",
       icon: <>
 
         <BiLogoHtml5 size={40} color='#DE4B25' />
@@ -124,8 +164,7 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
       imgSrc: `${imgSorveteria}` ,
       previewLink: "https://sorveteriapinguimfronteira.com/",
       githubLink: "https://github.com/jhondharkyson520/ice-cream",
-    },  
-    
+    },
     {
       title: languageMode ? "Agency" : "Agência",
       description: languageMode ? 
@@ -176,6 +215,9 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
     }
   ];
 
+  const handleOthersApps = () => {
+    window.location.href = '/projects';
+  };
 
   return (
     <div className=" max-w-6xl mt-16 items-center text-center justify-center" id="projects" ref={projectsRef}  >
@@ -257,6 +299,9 @@ function ProjectsContent({ projectsRef }: ProjectsProps) {
 
         
       </div>
+      <button onClick={handleOthersApps} className="items-center justify-center flex-row bg-sky-700 px-4 py-1 rounded-lg hover:scale-110 transition-transform">
+        Ver outros aplicativos web
+      </button>
       <ScrollToTopButton />
       <WhatsAppButton />
     </div>
